@@ -62,9 +62,9 @@ brews:
 
         license: "MIT"
 
-        skip_upload: true
+        skip_upload: false # true
 
-        download_strategy: GitDownloadStrategy
+        download_strategy: CurlDownloadStrategy # GitDownloadStrategy
 
         dependencies:
             -   name: git
@@ -98,6 +98,8 @@ brews:
             branch: main
             owner: iac-factory # ethrgg/templates
             name: homebrew-taps # homebrew-go-cobra-cli-tap
+
+            # token: "{{ .Env.GITHUB_PERSONAL_AUTH_TOKEN }}"
 
 changelog:
     use: github # gitlab
