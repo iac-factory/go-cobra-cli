@@ -5,7 +5,10 @@ FROM golang:1.22-alpine as BUILD
 ENV GOOS "linux"
 ENV GOVCS "*:all"
 ENV CGO_ENABLED "0"
-ENV GOPRIVATE "gitlab.com/ethrgg/*"
+
+ENV GOPRIVATE "github.com/iac-factory/*"
+
+# ENV GOPRIVATE "gitlab.com/ethrgg/*"
 
 WORKDIR /go/src/github.com/iac-factory/go-cobra-cli
 
