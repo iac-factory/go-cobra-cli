@@ -52,7 +52,10 @@ brew install go-cobra-cli
 
 ---
 
-## Local Deployment & Initial Setup Instructions
+## Deployment & Initial Setup (Maintainers)
+
+**The following section is only intended for project maintainers & developers only**.
+    - Please see the [getting started](#getting-started) section for installation and upgrade instructions.
 
 1. Install `goreleaser` if it isn't installed
 
@@ -132,8 +135,6 @@ brew install go-cobra-cli
 1. Install the package (see the [installation](#installing) section)
 
 ## Reference(s)
-
----
 
 - [`go` Linking](https://www.digitalocean.com/community/tutorials/using-ldflags-to-set-version-information-for-go-applications?utm_source=reddit&utm_medium=social&utm_campaign=do-ldflags)
 - [`goreleaser`](https://goreleaser.com/install/)
