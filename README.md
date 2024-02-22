@@ -148,7 +148,7 @@ brew install go-cobra-cli
 
 ```bash
 # --> Delete Remote Tag
-git push origin --delete v0.1.22
+git push origin --delete v0.0.0
 
 # --> HEAD Tag
 git tag --points-at HEAD
