@@ -44,7 +44,7 @@ archives:
 brews:
     -   name: go-cobra-cli
 
-        url_template: "git@github.com:iac-factory/go-cobra-cli.git" # "git@gitlab.com:ethrgg/templates/go-cobra-cli.git"
+        # url_template: "git@gitlab.com:ethrgg/templates/go-cobra-cli.git"
 
         commit_author:
             name: Jacob B. Sanders
