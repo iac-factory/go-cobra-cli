@@ -29,6 +29,12 @@ brew install go-cobra-cli
 ### Upgrading
 
 ```bash
+brew update && brew upgrade go-cobra-cli
+```
+
+### Reinstalling
+
+```bash
 brew update
 brew unlink go-cobra-cli
 brew install go-cobra-cli
