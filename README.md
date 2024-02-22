@@ -136,10 +136,18 @@ brew install go-cobra-cli
 
 ### Useful Command(s)
 
+**Tags**
+
 ```bash
 # --> Delete Remote Tag
 git push origin --delete v0.1.22
 
 # --> HEAD Tag
 git tag --points-at HEAD
+```
+
+**SSH Agent**
+
+```bash
+eval "$(ssh-agent -s)"
 ```
