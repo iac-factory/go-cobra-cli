@@ -54,7 +54,7 @@ brew install go-cobra-cli
 
 ## Deployment & Initial Setup (Maintainers)
 
-**The following section is only intended for project maintainers & developers only**.
+**The following section is intended only for project maintainers & developers**.
     - Please see the [getting started](#getting-started) section for installation and upgrade instructions.
 
 1. Install `goreleaser` if it isn't installed
