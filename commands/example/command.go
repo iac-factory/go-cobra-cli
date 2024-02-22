@@ -2,11 +2,11 @@ package example
 
 import (
 	"fmt"
+	"github.com/iac-factory/go-cobra-cli/internal/constants"
+	"github.com/iac-factory/go-cobra-cli/internal/log"
+	"github.com/iac-factory/go-cobra-cli/internal/marshalers"
+	"github.com/iac-factory/go-cobra-cli/internal/types/output"
 	"github.com/spf13/cobra"
-	"gitlab.com/ethrgg/templates/go-cobra-cli/internal/constants"
-	"gitlab.com/ethrgg/templates/go-cobra-cli/internal/log"
-	"gitlab.com/ethrgg/templates/go-cobra-cli/internal/marshalers"
-	"gitlab.com/ethrgg/templates/go-cobra-cli/internal/types/output"
 	"log/slog"
 	"strings"
 )

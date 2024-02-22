@@ -15,9 +15,9 @@ section(s) where appropriate -- namely `go-cobra-cli` and VCS references.
 ### Installing
 
 ```bash
-brew tap ethr/homebrew-go-cobra-cli-tap git@gitlab.com:ethrgg/templates/homebrew-go-cobra-cli-tap
+brew tap iac-factory/homebrew-taps git@github.com:iac-factory/homebrew-taps
 
-# brew install ethr/homebrew-go-cobra-cli-tap/go-cobra-cli --verbose --debug
+# brew install iac-factory/homebrew-taps/go-cobra-cli --verbose --debug
 
 # --> Simplified
 brew install go-cobra-cli
@@ -61,10 +61,11 @@ brew install go-cobra-cli
     goreleaser release --snapshot --clean
     ```
 
-1. Configure the default system's local `gitlab_token` secret
+1. Configure the default system's local `gitlab_token` or `github_token` secret
 
     ```bash
     mkdir -p ~/.config/goreleaser && touch ~/.config/goreleaser/gitlab_token
+    mkdir -p ~/.config/goreleaser && touch ~/.config/goreleaser/github_token
     ```
 
 1. Commit and push to VCS
@@ -108,7 +109,7 @@ brew install go-cobra-cli
 1. Tap the repository using `git+ssh` protocol - if the repository is private, ssh access is required
 
     ```bash
-    brew tap ethr/homebrew-go-cobra-cli-tap git@gitlab.com:ethrgg/templates/homebrew-go-cobra-cli-tap
+    brew tap iac-factory/homebrew-taps git@github.com:iac-factory/homebrew-taps
     ```
 
 1. Update the Cask if already established
@@ -120,7 +121,7 @@ brew install go-cobra-cli
 1. Install the package
 
     ```bash
-    brew install ethr/homebrew-go-cobra-cli-tap/go-cobra-cli --verbose --debug
+    brew install iac-factory/homebrew-taps/go-cobra-cli --verbose --debug
 
     # --> Simplified
     brew install go-cobra-cli
@@ -136,6 +137,8 @@ brew install go-cobra-cli
 - [Cobra User Guide](https://github.com/spf13/cobra/blob/main/site/content/user_guide.md)
 - [Brew Formula Cookbook](https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md)
 - [New Cask Formula](https://github.com/Homebrew/homebrew-cask)
+
+### Commands
 
 ```bash
 # --> Delete Remote Tag

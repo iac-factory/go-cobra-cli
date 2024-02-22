@@ -57,7 +57,7 @@ brews:
 
         caveats: "Internal Usage Only"
 
-        homepage: "https://gitlab.com/ethrgg/templates/go-cobra-cli"
+        homepage: "https://github.com/iac-factory/go-cobra-cli"
 
         description: "Example CLI Template"
 

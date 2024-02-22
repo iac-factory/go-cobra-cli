@@ -1,4 +1,4 @@
-module gitlab.com/ethrgg/templates/go-cobra-cli
+module github.com/iac-factory/go-cobra-cli
 
 go 1.22
 

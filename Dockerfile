@@ -7,7 +7,7 @@ ENV GOVCS "*:all"
 ENV CGO_ENABLED "0"
 ENV GOPRIVATE "gitlab.com/ethrgg/*"
 
-WORKDIR /go/src/gitlab.com/ethrgg/templates/go-cobra-cli
+WORKDIR /go/src/github.com/iac-factory/go-cobra-cli
 
 COPY . ./
 

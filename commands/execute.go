@@ -1,9 +1,9 @@
 package commands
 
 import (
+	"github.com/iac-factory/go-cobra-cli/commands/example"
+	"github.com/iac-factory/go-cobra-cli/internal/log/color"
 	"github.com/spf13/cobra"
-	"gitlab.com/ethrgg/templates/go-cobra-cli/commands/example"
-	"gitlab.com/ethrgg/templates/go-cobra-cli/internal/log/color"
 )
 
 // Execute runs the root command and handles any CLI execution exception. Additionally,
