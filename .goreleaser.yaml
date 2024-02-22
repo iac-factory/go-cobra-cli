@@ -126,6 +126,9 @@ changelog:
         -   title: "CI"
             regexp: '^.*?(c|C)(i|I)(\([[:word:]]+\))??!?(\ |)?(\:|\-)?(\ |).+$'
             order: 6
+        -   title: "Refactor"
+            regexp: '^.*?(r|R)efactor(\([[:word:]]+\))??!?(\ |)?(\:|\-)?(\ |).+$'
+            order: 7
         -   title: Others
             order: 999
 

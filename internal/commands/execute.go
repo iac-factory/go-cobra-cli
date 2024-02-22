@@ -1,7 +1,7 @@
 package commands
 
 import (
-	"github.com/iac-factory/go-cobra-cli/commands/example"
+	"github.com/iac-factory/go-cobra-cli/internal/commands/example"
 	"github.com/iac-factory/go-cobra-cli/internal/log/color"
 	"github.com/spf13/cobra"
 )

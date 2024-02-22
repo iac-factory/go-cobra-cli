@@ -3,7 +3,7 @@ package main
 import (
 	_ "embed"
 	"fmt"
-	"github.com/iac-factory/go-cobra-cli/commands"
+	"github.com/iac-factory/go-cobra-cli/internal/commands"
 	"github.com/iac-factory/go-cobra-cli/internal/constants"
 	"github.com/iac-factory/go-cobra-cli/internal/log"
 	"github.com/iac-factory/go-cobra-cli/internal/types/level"
