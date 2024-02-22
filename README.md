@@ -16,9 +16,11 @@ section(s) where appropriate -- namely `go-cobra-cli` and VCS references.
 
 ```bash
 brew tap iac-factory/homebrew-taps
+
+# --> GitLab Private Configuration Example
 # brew tap ethr/homebrew-go-cobra-cli-tap git@gitlab.com:ethrgg/templates/homebrew-go-cobra-cli-tap
 
-# brew install iac-factory/homebrew-taps/go-cobra-cli --verbose --debug
+# brew install iac-factory/taps/go-cobra-cli --verbose --debug
 
 # --> Simplified
 brew install go-cobra-cli
@@ -93,24 +95,24 @@ brew install go-cobra-cli
     goreleaser release --clean
     ```
 
-1. Update local `Formula` to include the new tag. The following step is always required for private GitLab projects
+1. Update local `Formula` to include the new tag (only applicable for private GitLab projects)
 
     ```bash
     sed -i -e "s/using: GitDownloadStrategy/using: GitDownloadStrategy, tag: \"$(git tag --points-at HEAD)\"/g" ./dist/homebrew/Formula/go-cobra-cli.rb
     ```
 
-1. Copy the updated `Formula` to system clipboard
+1. Copy the updated `Formula` to system clipboard (only applicable for private GitLab projects)
 
     ```bash
     cat ./dist/homebrew/Formula/go-cobra-cli.rb | pbcopy
     ```
 
-1. Update the Homebrew Tap's *.rb file with clipboard's contents
+1. Update the Homebrew Tap's *.rb file with clipboard's contents (only applicable for private GitLab projects)
 
-1. Tap the repository using `git+ssh` protocol - if the repository is private, ssh access is required
+1. Tap the repository using `git+ssh` protocol (only applicable for private repositories)
 
     ```bash
-    # brew tap iac-factory/homebrew-taps git@github.com:iac-factory/homebrew-taps
+    brew tap iac-factory/homebrew-taps git@github.com:iac-factory/homebrew-taps
     ```
 
 1. Update the Cask if already established
@@ -119,14 +121,7 @@ brew install go-cobra-cli
     brew update
     ```
 
-1. Install the package
-
-    ```bash
-    brew install iac-factory/homebrew-taps/go-cobra-cli --verbose --debug
-
-    # --> Simplified
-    brew install go-cobra-cli
-    ```
+1. Install the package (see the [installation](#installing) section)
 
 ## Reference(s)
 
@@ -139,7 +134,7 @@ brew install go-cobra-cli
 - [Brew Formula Cookbook](https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md)
 - [New Cask Formula](https://github.com/Homebrew/homebrew-cask)
 
-### Commands
+### Useful Command(s)
 
 ```bash
 # --> Delete Remote Tag

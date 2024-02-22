@@ -82,10 +82,11 @@ brews:
         conflicts:
             - go-cobra-cli
 
+        # --> required gitlab configuration
         # install: | # https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md
         #     ENV["GOPATH"] = buildpath
         #     # bin_path = buildpath/"src/gitlab.com:ethrgg/templates/go-cobra-cli"
-        #     bin_path = buildpath/"src/github.com:iac-factory/go-cobra-cli"
+        #     bin_path = buildpath/"src/gitlab.com:ethrgg/templates/go-cobra-cli"
         #     bin_path.install Dir["*"]
         #     cd bin_path do
         #         system "go", "build", "-o", bin/"go-cobra-cli", "."
@@ -95,8 +96,6 @@ brews:
             branch: main
             owner: iac-factory # ethrgg/templates
             name: homebrew-taps # homebrew-go-cobra-cli-tap
-
-            # token: "{{ .Env.GITHUB_PERSONAL_AUTH_TOKEN }}"
 
 changelog:
     use: github # gitlab
