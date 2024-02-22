@@ -6,7 +6,6 @@ env_files:
     github_token: ~/.config/goreleaser/github_token
     gitlab_token: ~/.config/goreleaser/gitlab_token
 
-
 before:
     hooks:
         - go vet
@@ -35,17 +34,17 @@ archives:
             -   goos: windows
                 format: zip
 
-gitlab_urls:
-    api: https://gitlab.com/api/v4/
-    download: https://gitlab.com
-    skip_tls_verify: false
-    use_package_registry: true
-    use_job_token: true
+# gitlab_urls:
+#     api: https://gitlab.com/api/v4/
+#     download: https://gitlab.com
+#     skip_tls_verify: false
+#     use_package_registry: true
+#     use_job_token: true
 
 brews:
     -   name: go-cobra-cli
 
-        url_template: "git@gitlab.com:ethrgg/templates/go-cobra-cli.git"
+        url_template: "git@github.com:iac-factory/go-cobra-cli.git" # "git@gitlab.com:ethrgg/templates/go-cobra-cli.git"
 
         commit_author:
             name: Jacob B. Sanders
@@ -57,7 +56,7 @@ brews:
 
         caveats: "Internal Usage Only"
 
-        homepage: "https://github.com/iac-factory/go-cobra-cli"
+        homepage: "https://github.com/iac-factory/go-cobra-cli" # "https://gitlab.com/ethrgg/templates/go-cobra-cli"
 
         description: "Example CLI Template"
 
@@ -85,7 +84,8 @@ brews:
 
         install: | # https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md
             ENV["GOPATH"] = buildpath
-            bin_path = buildpath/"src/gitlab.com:ethrgg/templates/go-cobra-cli"
+            # bin_path = buildpath/"src/gitlab.com:ethrgg/templates/go-cobra-cli"
+            bin_path = buildpath/"src/github.com:iac-factory/go-cobra-cli"
             bin_path.install Dir["*"]
             cd bin_path do
                 system "go", "build", "-o", bin/"go-cobra-cli", "."
@@ -96,11 +96,11 @@ brews:
 
         repository:
             branch: main
-            owner: ethrgg/templates
-            name: homebrew-go-cobra-cli-tap
+            owner: iac-factory # ethrgg/templates
+            name: homebrew-taps # homebrew-go-cobra-cli-tap
 
 changelog:
-    use: gitlab
+    use: github # gitlab
 
     sort: asc
 
