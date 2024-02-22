@@ -54,7 +54,7 @@ brews:
 
         folder: Formula
 
-        caveats: "Internal Usage Only"
+        caveats: "Internal Usage Only\n"
 
         homepage: "https://github.com/iac-factory/go-cobra-cli" # "https://gitlab.com/ethrgg/templates/go-cobra-cli"
 
