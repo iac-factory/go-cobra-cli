@@ -15,7 +15,8 @@ section(s) where appropriate -- namely `go-cobra-cli` and VCS references.
 ### Installing
 
 ```bash
-brew tap iac-factory/homebrew-taps git@github.com:iac-factory/homebrew-taps
+brew tap iac-factory/homebrew-taps
+# brew tap ethr/homebrew-go-cobra-cli-tap git@gitlab.com:ethrgg/templates/homebrew-go-cobra-cli-tap
 
 # brew install iac-factory/homebrew-taps/go-cobra-cli --verbose --debug
 
@@ -109,7 +110,7 @@ brew install go-cobra-cli
 1. Tap the repository using `git+ssh` protocol - if the repository is private, ssh access is required
 
     ```bash
-    brew tap iac-factory/homebrew-taps git@github.com:iac-factory/homebrew-taps
+    # brew tap iac-factory/homebrew-taps git@github.com:iac-factory/homebrew-taps
     ```
 
 1. Update the Cask if already established
