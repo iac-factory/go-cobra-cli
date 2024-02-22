@@ -37,7 +37,7 @@ brew install go-cobra-cli
 ### Pre-Commit
 
 1. Install pre-commit from https://pre-commit.com/#install
-2. Create a `.pre-commit-config.yaml` file at the root of your repository with the following content:
+2. Create a `.pre-commit-config.yaml` file at the root of the repository with the following content:
 
    ```
    repos:
