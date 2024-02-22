@@ -26,6 +26,14 @@ brew tap iac-factory/homebrew-taps
 brew install go-cobra-cli
 ```
 
+### Upgrading
+
+```bash
+brew update
+brew unlink go-cobra-cli
+brew install go-cobra-cli
+```
+
 ### Pre-Commit
 
 1. Install pre-commit from https://pre-commit.com/#install
