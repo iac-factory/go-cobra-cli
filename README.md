@@ -103,19 +103,19 @@ brew install go-cobra-cli
     goreleaser release --clean
     ```
 
-1. Update local `Formula` to include the new tag (only applicable for private GitLab projects)
+1. Update local `Formula` to include the new tag (only applicable for private projects)
 
     ```bash
     sed -i -e "s/using: GitDownloadStrategy/using: GitDownloadStrategy, tag: \"$(git tag --points-at HEAD)\"/g" ./dist/homebrew/Formula/go-cobra-cli.rb
     ```
 
-1. Copy the updated `Formula` to system clipboard (only applicable for private GitLab projects)
+1. Copy the updated `Formula` to system clipboard (only applicable for private projects)
 
     ```bash
     cat ./dist/homebrew/Formula/go-cobra-cli.rb | pbcopy
     ```
 
-1. Update the Homebrew Tap's *.rb file with clipboard's contents (only applicable for private GitLab projects)
+1. Update the Homebrew Tap's *.rb file with clipboard's contents (only applicable for private projects)
 
 1. Tap the repository using `git+ssh` protocol (only applicable for private repositories)
 
