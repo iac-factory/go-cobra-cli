@@ -82,17 +82,14 @@ brews:
         conflicts:
             - go-cobra-cli
 
-        install: | # https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md
-            ENV["GOPATH"] = buildpath
-            # bin_path = buildpath/"src/gitlab.com:ethrgg/templates/go-cobra-cli"
-            bin_path = buildpath/"src/github.com:iac-factory/go-cobra-cli"
-            bin_path.install Dir["*"]
-            cd bin_path do
-                system "go", "build", "-o", bin/"go-cobra-cli", "."
-            end
-
-            # bash_completion.install "completions/foo.bash" => "foo"
-            # ...
+        # install: | # https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md
+        #     ENV["GOPATH"] = buildpath
+        #     # bin_path = buildpath/"src/gitlab.com:ethrgg/templates/go-cobra-cli"
+        #     bin_path = buildpath/"src/github.com:iac-factory/go-cobra-cli"
+        #     bin_path.install Dir["*"]
+        #     cd bin_path do
+        #         system "go", "build", "-o", bin/"go-cobra-cli", "."
+        #     end
 
         repository:
             branch: main
